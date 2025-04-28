@@ -36,8 +36,7 @@ export default function App() {
           </div>
 
           <section className="mb-12 text-center">
-            <h1 className="text-4xl font-extrabold mb-2">Welcome to Dhafin’s Gallery</h1>
-            <p className="text-blue-1 dark:text-blue-3">Scroll down and interact ✨</p>
+            <h1 className="text-4xl font-extrabold mb-2">TP MODUL 9 SBD</h1>
           </section>
 
           <CardGrid />
@@ -45,7 +44,7 @@ export default function App() {
         </main>
 
         <footer className="text-center text-sm text-blue-1 dark:text-blue-2 py-6">
-          © {new Date().getFullYear()} Dhafin’s Frontend Showcase
+          © {new Date().getFullYear()} Dhafin 2306267145
         </footer>
       </div>
     </div>
