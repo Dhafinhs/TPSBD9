@@ -20,9 +20,9 @@ export default function Navbar() {
   }, [lastScrollY]);
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-transform duration-300 ${show ? "translate-y-0" : "-translate-y-full"} bg-primary dark:bg-gray-900 text-white shadow-md`}>
+    <nav className={`fixed top-0 w-full z-50 transition-transform duration-300 ${show ? "translate-y-0" : "-translate-y-full"} bg-primary text-white shadow-md`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
-        <h1 className="text-xl font-bold">Dhafin Hamizan Setiawan</h1>
+        <h1 className="text-xl font-bold">Dhafin</h1>
 
         <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-white">
           ☰

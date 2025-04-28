@@ -14,7 +14,7 @@ export default function App() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen bg-primary text-white text-3xl font-bold animate-pulse">
+      <div className="flex items-center justify-center h-screen bg-primary text-light text-3xl font-bold animate-pulse">
         Loading Dhafin's App...
       </div>
     );
@@ -22,29 +22,30 @@ export default function App() {
 
   return (
     <div className={dark ? "dark" : ""}>
-      <div className="bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-white min-h-screen">
+      <div className="bg-light dark:bg-primary text-primary dark:text-white min-h-screen">
         <Navbar />
 
         <main className="max-w-7xl mx-auto px-4 pt-20 pb-10">
           <div className="flex justify-end mb-4">
             <button
               onClick={() => setDark(!dark)}
-              className="bg-white dark:bg-gray-800 text-primary dark:text-white border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-full shadow hover:scale-105 transition"
+              className="bg-white dark:bg-blue-1 text-primary dark:text-white border border-gray-300 dark:border-blue-3 px-4 py-2 rounded-full shadow hover:scale-105 transition"
             >
               {dark ? "☀️ Light" : "🌙 Dark"}
             </button>
           </div>
 
           <section className="mb-12 text-center">
-            <h1 className="text-4xl font-extrabold mb-2">TP SBD MODUL 9 DHAFIN HAMIZAN SETIAWAN</h1>
+            <h1 className="text-4xl font-extrabold mb-2">Welcome to Dhafin’s Gallery</h1>
+            <p className="text-blue-1 dark:text-blue-3">Scroll down and interact ✨</p>
           </section>
 
           <CardGrid />
           <Counter />
         </main>
 
-        <footer className="text-center text-sm text-gray-500 py-6">
-          © {new Date().getFullYear()} Dhafin Hamizan Setiawan 2306267145
+        <footer className="text-center text-sm text-blue-1 dark:text-blue-2 py-6">
+          © {new Date().getFullYear()} Dhafin’s Frontend Showcase
         </footer>
       </div>
     </div>
